@@ -38,12 +38,6 @@ Le but de cet exercice est de comprendre le concept de reverse proxy : un seul p
 ```bash
 # Construire et démarrer tous les services
 docker-compose up --build
-
-# Ou en arrière-plan
-docker-compose up -d --build
-
-# Vérifier que les conteneurs sont en cours d'exécution
-docker-compose ps
 ```
 
 ## Accès
