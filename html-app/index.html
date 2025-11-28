@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Project - IIM A3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        :root {
+            --pico-primary: #ff6b35;
+            --pico-primary-background: #ff6b35;
+            --pico-primary-hover: #e55a2b;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <hgroup>
+            <h1>Docker - IIM CDI A3</h1>
+            <p>Boudjemeline Haider</p>
+        </hgroup>
+    </header>
+    
+    <main class="container">
+        <article>
+            <hgroup>
+                <h2>Projet Docker - Reverse Proxy</h2>
+                <p>
+                    Application utilisant Docker Compose pour un reverse proxy Nginx 
+                    avec une api Flask et une page HTML statique.
+                </p>
+            </hgroup>
+            
+            <div class="grid">
+                <div>
+                    <strong>Service</strong>
+                    <p><code>html-app</code></p>
+                </div>
+                <div>
+                    <strong>Serveur</strong>
+                    <p><code>Nginx</code></p>
+                </div>
+                <div>
+                    <strong>Route</strong>
+                    <p><code>/site</code></p>
+                </div>
+                <div>
+                    <strong>Port</strong>
+                    <p><code>8080</code></p>
+                </div>
+            </div>
+        </article>
+        
+        <article>
+            <hgroup>
+                <h2>Architecture</h2>
+            </hgroup>
+            
+            <ul>
+                <li><strong>Flask App (API)</strong> - Route: <code>/api</code></li>
+                <li><strong>HTML</strong> - Route: <code>/site</code></li>
+                <li><strong>Nginx Reverse Proxy</strong> - Point d'entrée unique sur le port 8080</li>
+            </ul>
+        </article>
+    </main>
+    
+    <footer class="container">
+        <p><small>Projet du cours Docker - IIM A3 - Boudjemeline Haider</small></p>
+    </footer>
+</body>
+</html>
